@@ -1,0 +1,17 @@
+Projectile : "{65CDB9FEFCF751DE}Prefabs/Weapons/Magazines/9M133_Kornet/Ammo_Magazine_Kornet.et" {
+ ID "629D11C7F7353F80"
+ components {
+  MissileMoveComponent "{62EB07A083C43107}" {
+   InitSpeed 300
+   ThrustInitTime 0.04
+  }
+  WCS_Armament_ProjectileUIInfoComponent "{62E8F0D3EA114200}" {
+   m_Name "#SPC-Weapon_9M117_Name"
+  }
+  WCS_Armament_RocketTraceEffectComponent "{62E8F0D3EA114201}" {
+   m_ExitParticlePosition 0 -0.014 1.979
+  }
+ }
+ coords 89.296 4.414 1237.389
+ CartridgeModel "{BB3F99FC7223DDC5}Assets/Weapons/Magazines/RPG7/Rocket_PG7VM.xob"
+}

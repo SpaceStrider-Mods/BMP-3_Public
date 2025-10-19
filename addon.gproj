@@ -1,0 +1,93 @@
+GameProject {
+ ID "BMP3"
+ GUID "5B383D4CB27E0D54"
+ TITLE "BMP3"
+ Dependencies {
+  "58D0FB3206B6F859" "5E389BB9F58B79A6"
+ }
+ Configurations {
+  GameProjectConfig PC {
+   WidgetManagerSettings WidgetManagerSettings "{AC4BE58770485E02}" {
+    StringTables {
+     StringTableDefinition "{64EA224FA3991563}" {
+      StringTableSource "{2BC6BB774AA6E34D}Language/BMP3.st"
+      Languages {
+       LanguageDefinition "{64EA224FA4FC7C75}" {
+        Code "cs_cz"
+        StringTableRuntime "{038FC5C79A774F64}Language/BMP3.cs_cz.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7C33}" {
+        Code "de_de"
+        StringTableRuntime "{D6F1DFF489D45E44}Language/BMP3.de_de.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7C24}" {
+        Code "en_us"
+        StringTableRuntime "{880155BFE3275B45}Language/BMP3.en_us.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7FD3}" {
+        Code "es_es"
+        StringTableRuntime "{4D4D18360D25305A}Language/BMP3.es_es.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7FC1}" {
+        Code "fr_fr"
+        StringTableRuntime "{F6E5ED01EBA6D358}Language/BMP3.fr_fr.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7FF0}" {
+        Code "it_it"
+        StringTableRuntime "{76F96235468450A1}Language/BMP3.it_it.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7FED}" {
+        Code "ja_jp"
+        StringTableRuntime "{66E2DFA778F5600A}Language/BMP3.ja_jp.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7F9D}" {
+        Code "ko_kr"
+        StringTableRuntime "{C65CF70BEBD86335}Language/BMP3.ko_kr.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7F89}" {
+        Code "pl_pl"
+        StringTableRuntime "{9A2D51F15537FF49}Language/BMP3.pl_pl.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7F85}" {
+        Code "pt_br"
+        StringTableRuntime "{4F5ACB3D6EC935F3}Language/BMP3.pt_br.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7FB3}" {
+        Code "ru_ru"
+        StringTableRuntime "{1A1BDF95F3B05085}Language/BMP3.ru_ru.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7FA2}" {
+        Code "uk_ua"
+        StringTableRuntime "{90438A639F9EEED0}Language/BMP3.uk_ua.conf"
+       }
+       LanguageDefinition "{64EA224FA4FC7F5F}" {
+        Code "zh_cn"
+        StringTableRuntime "{4AF3E45EA63E3ECD}Language/BMP3.zh_cn.conf"
+       }
+      }
+     }
+    }
+   }
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+   PlatformHardware PS5
+   DefaultSettings EngineUserSettings "{5702F087A781A9FC}" {
+    VideoUserSettings VideoUserSettings "{B272A67DB18E04F9}" {
+     FsrEnabled 1
+    }
+   }
+   ChimeraGlobalConfig ChimeraGlobalConfig "{6F12664687156A7B}" {
+    "Maximum View Distance" 2000
+    "Minimum View Distance" 2000
+   }
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

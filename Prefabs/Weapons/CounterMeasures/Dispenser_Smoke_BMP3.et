@@ -1,0 +1,123 @@
+GenericEntity : "{BE733285C090F150}Prefabs/Weapons/Countermeasures/Dispenser_Smoke_BTR70.et" {
+ ID "62A8D6FA317E0E04"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Object "{4EAACDF613CECFEE}Assets/Weapons/Countermeasures/M130/M130_Flares_Dispenser.xob"
+   Materials {
+    MaterialAssignClass "{64EA224D13D16FD8}" {
+     SourceMaterial "M130_Flares_Dispenser"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+  }
+  WCS_Armament_SmokeDispenserComponent "{62DB0A13234C2E8C}" {
+   m_Projectile "{65D11337FA01A1B2}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_3D17.et"
+   m_IdlePosition PointInfo "{62EA140562445F35}" {
+    Offset 1.0711 180 0.0165
+    Angles 35 1 0
+   }
+   m_FirePosition PointInfo "{62EA140560837388}" {
+    Offset 1.0711 -0.1502 0.0165
+    Angles 35 4 0
+   }
+  }
+  WCS_Armament_SmokeDispenserComponent "{62E9413FF1030B93}" {
+   m_Projectile "{65D11337FA01A1B2}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_3D17.et"
+   m_IdlePosition PointInfo "{62EA140557748795}" {
+    Offset -0.7049 180 0.2195
+    Angles 35 1 0
+   }
+   m_FirePosition PointInfo "{62EA140555EEDE6F}" {
+    Offset -0.7049 -0.1705 0.2195
+    Angles 35 -4 0
+   }
+  }
+  WCS_Armament_SmokeDispenserComponent "{62E9413FF488F3DF}" {
+   m_Projectile "{65D11337FA01A1B2}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_3D17.et"
+   m_IdlePosition PointInfo "{62EA140558D54B3C}" {
+    Offset 0.9661 180 0.1582
+    Angles 35 1 0
+   }
+   m_FirePosition PointInfo "{62EA140559AEB067}" {
+    Offset 0.9661 -0.1516 0.1582
+    Angles 35 4 0
+   }
+  }
+  WCS_Armament_SmokeDispenserComponent "{632D41F48B32709D}" {
+   m_Projectile "{65D11337FA01A1B2}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_3D17.et"
+   m_IdlePosition PointInfo "{632D41F4A925F82A}" {
+    Offset -0.6103 180 0.3226
+    Angles 35 1 0
+   }
+   m_FirePosition PointInfo "{632D41F4AC6347E9}" {
+    Offset -0.6103 -0.1654 0.3226
+    Angles 35 -4 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 1500
+   m_iShakeAmount 1
+   m_iId 3
+  }
+  WCS_Armament_SmokeDispenserComponent "{632D41F48D0816DD}" {
+   m_Projectile "{65D11337FA01A1B2}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_3D17.et"
+   m_IdlePosition PointInfo "{632D41F4A8F94DB5}" {
+    Offset 0.8631 180 0.2639
+    Angles 35 1 0
+   }
+   m_FirePosition PointInfo "{632D41F4AF1F7F2C}" {
+    Offset 0.8631 -0.1587 0.2639
+    Angles 35 4 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 1500
+   m_iShakeAmount 1
+   m_iId 4
+  }
+  WCS_Armament_SmokeDispenserComponent "{632D41F48F0AEDC0}" {
+   m_Projectile "{65D11337FA01A1B2}Prefabs/Weapons/Ammo/Ammo_Smoke_Vehicle_3D17.et"
+   m_IdlePosition PointInfo "{632D41F4AB91F0DC}" {
+    Offset -0.5029 180 0.4136
+    Angles 35 0 0
+   }
+   m_FirePosition PointInfo "{632D41F4AE1BFD28}" {
+    Offset -0.5029 -0.1632 0.4136
+    Angles 35 -4 0
+   }
+   m_vDispersion 2 2 2
+   m_iNumProjectiles 1
+   m_iFireIntervalMS 1500
+   m_iShakeAmount 1
+   m_iId 5
+  }
+  ActionsManagerComponent "{62A957B2374C324C}" {
+   ActionContexts {
+    UserActionContext "{62A957B22D79F4B1}" {
+     ContextName "rearm_1"
+     Position PointInfo "{6152B772E6638695}" {
+      Offset -0.6201 -0.1582 0.3898
+     }
+     Omnidirectional 0
+    }
+    UserActionContext "{632D41EB7F62CD4D}" {
+     ContextName "rearm_2"
+     Position PointInfo "{6152B772E6638695}" {
+      Offset 0.9382 -0.1587 0.2146
+     }
+     Omnidirectional 0
+    }
+   }
+   additionalActions {
+    WCS_RearmDispenserAtRepairStationAction "{62A957B2FD111201}" {
+     ParentContextList {
+      "rearm_1" "rearm_2"
+     }
+     m_fSupplyCostPerProjectile 10
+    }
+   }
+   AllowCrossHierarchy 1
+  }
+ }
+ coords 75.982 1 1220.298
+}

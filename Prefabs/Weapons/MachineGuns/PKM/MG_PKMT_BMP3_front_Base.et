@@ -1,0 +1,20 @@
+GenericEntity : "{36C74DDCB2C9E2DB}Prefabs/Weapons/MachineGuns/PKM/MG_PKMT_Mi8_front.et" {
+ ID "324BA7485B3737E0"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     MagazineWell MagazineWellSPC_PKMTBMP3 "{6556155BA1A5EAC3}" {
+     }
+     MagazinePosition InventoryStorageSlot "{B80A64F4C834E9CB}" {
+      PivotID "barrel_chamber"
+      Offset -0.0372 0.0018 -0.0781
+      Angles 0 90 90
+     }
+     MagazineTemplate "{F28A902A5EC9F401}Prefabs/Weapons/Magazines/Box_762x54_PK_2000rnd_Tracer.et"
+    }
+   }
+  }
+ }
+ coords 70.88 2.028 1213.613
+}

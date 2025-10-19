@@ -1,0 +1,18 @@
+GenericEntity : "{73E6F6383657C169}Prefabs/Weapons/Cannons/2A70/Cannon_2A70_BMP3.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  MeshObject "{CFBAA4B701F95D69}" {
+   Materials {
+    MaterialAssignClass "{64E93AD34348101B}" {
+     SourceMaterial "body2"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+    MaterialAssignClass "{64E93AD343481002}" {
+     SourceMaterial "interier3"
+     AssignedMaterial "{8FBC3A6E946F056E}Common/Materials/Default_Transparent.emat"
+    }
+   }
+  }
+ }
+ coords 91.097 1 1248.402
+}

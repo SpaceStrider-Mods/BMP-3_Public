@@ -1,0 +1,42 @@
+GenericEntity : "{1D7174C97DF571DC}PrefabsEditable/SupportStationSystems/E_SupportStationSystem_Base.et" {
+ ID "5B2AD5B9801EB74E"
+ components {
+  SCR_ArsenalComponent "{62E49621E34C5C95}" {
+   m_OverwriteArsenalConfig SCR_ArsenalItemListConfig "{62E496210FD844DE}" {
+    m_aArsenalItems {
+     SCR_ArsenalItemStandalone "{6555784BBCFD0C91}" {
+      m_eItemType VEHICLE
+      m_eItemMode AMMUNITION
+      m_ItemResourceName "{F28A902A5EC9F401}Prefabs/Weapons/Magazines/Box_762x54_PK_2000rnd_Tracer.et"
+     }
+     SCR_ArsenalItemStandalone "{6555784BAD67353C}" {
+      m_eItemType VEHICLE
+      m_eItemMode AMMUNITION
+      m_ItemResourceName "{F373EE05DC3144B6}Prefabs/Weapons/Magazines/Box_762x54_PK_2000rnd_4Ball_1Tracer.et"
+     }
+     SCR_ArsenalItemStandalone "{6555784BA01C79A4}" {
+      m_eItemType VEHICLE
+      m_eItemMode AMMUNITION
+      m_iSupplyCost 135
+      m_eRequiredRank CAPTAIN
+      m_ItemResourceName "{4195403866390EEE}Prefabs/Weapons/Magazines/Box_30x165_2A42_200rnd_AP-T.et"
+     }
+     SCR_ArsenalItemStandalone "{6555784BD1171414}" {
+      m_eItemType VEHICLE
+      m_eItemMode AMMUNITION
+      m_iSupplyCost 135
+      m_eRequiredRank CAPTAIN
+      m_ItemResourceName "{8F8C2A7877DBBFF2}Prefabs/Weapons/Magazines/Box_30x165_2A42_300rnd_HEF-I.et"
+     }
+     SCR_ArsenalItemStandalone "{6555784BD4D1C953}" {
+      m_eItemType VEHICLE
+      m_eItemMode AMMUNITION
+      m_iSupplyCost 200
+      m_eRequiredRank CAPTAIN
+      m_ItemResourceName "{D670785E33E31DAA}Prefabs/Weapons/Magazines/Box_100mm_2A70_40rnd_HE.et"
+     }
+    }
+   }
+  }
+ }
+}
