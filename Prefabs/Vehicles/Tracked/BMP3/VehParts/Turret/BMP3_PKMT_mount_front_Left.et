@@ -1,0 +1,168 @@
+Turret : "{419D5A88C92E2540}Prefabs/Vehicles/Helicopters/Mi8MT/VehParts/WeapSystems/Mi8MT_PKMT_mount_base.et" {
+ ID "51ACD0965653D003"
+ components {
+  MeshObject "{51ACD09C4E0B7D16}" {
+   Object "{CC5C491F11E7A7D1}Assets/Vehicles/Tracked/BMP3/BMP3_WaistgunL.xob"
+  }
+  ProcAnimComponent "{51ACD09DB14C45C0}" {
+   Parameters {
+    ProcAnimParams "{60DCDE19ABC0CD26}" {
+     ResourceName "{1EABFDD3AD232FA4}anims/proc/BMP_Turret_Hull.pap"
+     BoneNames {
+      "v_waistgun_01"
+     }
+    }
+   }
+  }
+  SCR_BaseCompartmentManagerComponent "{51ACFBB07A14CFA6}" {
+   DoorInfoList {
+    CompartmentDoorReference "{61866E79DE5FF348}" {
+     AnimDoorIndex 4
+     OpenCloseDoorAnimGraph ""
+    }
+    CompartmentDoorReference "{6330394E8F29272D}" {
+     AnimDoorIndex 2
+     OpenCloseDoorAnimGraph ""
+    }
+    CompartmentDoorReference "{64FA172FE4CEE69D}" {
+     AnimDoorIndex 2
+    }
+    CompartmentDoorReference "{64FA172FE7C4AB19}" {
+    }
+    CompartmentDoorReference "{64FA172FE680DDB1}" {
+    }
+   }
+   CompartmentSlots {
+    TurretCompartmentSlot TurretCompartment {
+     CompartmentUniqueName "WaistgunnerL"
+     CompartmentAction SCR_GetInUserAction "{5086CC2CFDD3A05A}" {
+      ParentContextList {
+       "TopHatch_FL"
+      }
+     }
+     GetOutAction SCR_GetOutAction "{509D56664FF79DDB}" {
+      ParentContextList {
+       "frontGunner_switch_seat"
+      }
+     }
+     SwitchSeatAction SCR_SwitchSeatAction "{509D566648F37562}" {
+      ParentContextList {
+       "gunner"
+      }
+     }
+     AdditionalActions {
+      SCR_RemoveCasualtyUserAction "{5D56867A46DBE769}" {
+       ParentContextList {
+        "gunner"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D59F48D7BD2}" {
+       ParentContextList {
+        "default"
+       }
+      }
+     }
+     PassengerPositionInfo EntitySlotInfo "{B1CB25848A3D93A8}" {
+      PivotID "v_waistgunnerL_idle"
+      Offset 0 0.2 -0.05
+     }
+     SeatType 5
+     DoorInfoList {
+      1 2 3
+     }
+     m_bIsWaterTight 1
+     m_DefaultOccupantData SCR_DefaultOccupantData "{60DCDE19ABC0CD45}" {
+      m_sDefaultOccupantPrefab "{E8EF64F8B943A507}Prefabs/Characters/Factions/OPFOR/USSR_Army/KLMK/Character_USSR_AAT_KLMK.et"
+     }
+    }
+   }
+  }
+  TurretControllerComponent "{51ACD09C61C183E4}" {
+   LimitsHoriz -15 5
+   LimitsVert -5 15
+   TurretUnconsciousPosition 0 -8
+  }
+  TurretComponent "{60DCDE19ABC0CD6B}" {
+   components {
+    SightsComponent "{60DCDE19ABC0CD69}" {
+     Enabled 0
+     SightsPosition PointInfo "{61333E84A9F0F603}" {
+      PivotID "slot_weapon"
+      Offset -0.0001 0.3141 -0.2535
+     }
+    }
+   }
+   ikTargets {
+    AnimationIKTargetInfo "{60DCDE19ABC0329B}" {
+     PositionInfo PointInfo "{60DCDE19ABC0329A}" {
+      PivotID "v_waistgun_01"
+      Offset 0.1188 -0.1474 -0.467
+      Angles 56.2691 180 0
+     }
+    }
+    AnimationIKTargetInfo "{60DCDE19ABC03298}" {
+     PositionInfo PointInfo "{60DCDE19ABC03297}" {
+      PivotID "v_waistgun_01"
+      Offset 0.2796 -0.2192 -0.4684
+      Angles -14.1472 -90 -90
+     }
+    }
+   }
+  }
+  WeaponSlotComponent "{51ACD09C6BFEEE6A}" {
+   AttachType InventoryStorageSlot "{0AACE7470E421D82}" {
+    PivotID "v_waistgun_01"
+    Offset 0 -0.0883 -0.363
+    Prefab "{36C74DDCB2C9E2DB}Prefabs/Weapons/MachineGuns/PKM/MG_PKMT_Mi8_front.et"
+   }
+   WeaponTemplate "{FCCAC42DC12F9AF9}Prefabs/Weapons/MachineGuns/PKM/MG_PKMT_BMP3_front_Base.et"
+  }
+  ActionsManagerComponent "{51ACD09C7181BA0B}" {
+   ActionContexts {
+    UserActionContext "{51ACFBB064390C6E}" {
+     Position PointInfo "{51ACFBB061993925}" {
+      Offset 0 0.5278 0.0776
+     }
+    }
+    UserActionContext "{60DCDE19ABC03288}" {
+     Position PointInfo "{632D7632BEC1EE81}" {
+      PivotID "v_waistgunnerL_idle"
+      Angles 0 180 0
+     }
+    }
+   }
+   additionalActions {
+    SCR_ResupplyTurretBeltSupportStationAction "{64E93AD2FF225F0C}" {
+     ParentContextList {
+      "TopHatch_FL"
+     }
+     UIInfo SCR_ActionUIInfo "{64E93AD4F1B82918}" {
+      Name "#AR-SupportStation_Resupply_Vehicle_Weapon_ActionName"
+      m_sIconName "rearm"
+     }
+     ActionTitle "Resupply PKMT"
+     Duration -0.5
+     PerformPerFrame 1
+     "Sort Priority" 25
+     m_fLoopActionHoldDuration 0.1
+     m_bLowerWeaponOnUse 1
+     m_ResupplyData SCR_ResupplyItemSupportStationData "{64E93AD4F1B82910}" {
+      m_sItemPrefab "{F28A902A5EC9F401}Prefabs/Weapons/Magazines/Box_762x54_PK_2000rnd_Tracer.et"
+     }
+     m_sSoundProject "{310B4870AE881477}Sounds/Weapons/HeavyWeapons/M242/Weapons_HeavyWeapons_M242_Handling.acp"
+     m_iAddBulletsAmount 100
+    }
+   }
+   AllowCrossHierarchy 1
+  }
+  BaseItemAnimationComponent "{5242E42C7B4B2CEE}" {
+   AnimGraph "{847F34F75C70A43A}Assets/Vehicles/Wheeled/LAV25/workspaces/LAV25.agr"
+   AnimInstance "{DAA855714EBFE43E}Prefabs/Vehicles/Core/Vehicles_Base_Empty.asi"
+   AnimInjection AnimationAttachmentInfo "{5242E42C74AC2BF7}" {
+    AnimGraph "{847F34F75C70A43A}Assets/Vehicles/Wheeled/LAV25/workspaces/LAV25.agr"
+    AnimInstance "{4D3CA2D353C4FB44}Assets/Vehicles/Wheeled/LAV25/workspaces/LAV25_player.asi"
+   }
+  }
+ }
+ coords 915.849 1 792.058
+}

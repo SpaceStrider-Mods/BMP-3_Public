@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{340A5F37ACE1E5FF}Sounds/Weapons/HeavyWeapons/2A72/Weapons_HeavyWeapons_2A70_Shot_new.acp"
+ Configurations {
+  AudioProjectResourceClass PC {
+  }
+  AudioProjectResourceClass XBOX_ONE : PC {
+  }
+  AudioProjectResourceClass XBOX_SERIES : PC {
+  }
+  AudioProjectResourceClass PS4 : PC {
+  }
+  AudioProjectResourceClass PS5 : PC {
+  }
+  AudioProjectResourceClass HEADLESS : PC {
+  }
+ }
+}

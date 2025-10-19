@@ -1,0 +1,41 @@
+GenericEntity : "{5CD690CF2464ABA9}Prefabs/Weapons/Magazines/Box_127x99_M2_100rnd_Base.et" {
+ ID "476AE746F954DD20"
+ components {
+  AICombatPropertiesComponent "{59CE86D96C332DDF}" {
+   Priority 50
+   PriorityAgainstVehicles 60
+   UsedAgainst 15
+   IndirectlyUsedAgainst 0
+  }
+  InventoryMagazineComponent "{51EED12B803954CC}" {
+   Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
+    ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
+     Name "2A42 AP-T Belt"
+     Description "AP-T Belt for 30mm on BMP3"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 40
+    }
+    m_bDraggable 0
+    m_bVisible 0
+   }
+   WeightPerAmmo 0
+  }
+  MagazineComponent "{CA6BE4D6B4DAFD69}" {
+   MagazineWell MagazineWellSPC_30mm2A42AP "{6556155BDE36DDC0}" {
+   }
+   UIInfo MagazineUIInfo "{57126733AA401586}" {
+    Name "#SPC-Weapon_2A72_Name"
+    m_sAmmoCaliber "#SPC-AmmunitionID_30x165mm"
+    m_sAmmoType "#SPC-AmmunitionType_AP-T"
+    m_bShowAmmoTypeText 1
+    m_eAmmoTypeFlags 6
+   }
+   MaxAmmo 200
+   AmmoConfig "{DC9817AC686FC410}Configs/Weapons/Ammo/Ammo_30mm_BMP.conf"
+   AmmoMapping {
+    2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 22 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2
+   }
+  }
+ }
+}

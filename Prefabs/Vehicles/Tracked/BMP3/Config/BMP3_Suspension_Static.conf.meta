@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{A0EA547C6574BF71}Prefabs/Vehicles/Tracked/BFV/Configs/BMP3_Suspension_Static.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass PS5 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

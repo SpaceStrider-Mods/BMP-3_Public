@@ -1,0 +1,65 @@
+GenericEntity : "{1845D7099C6F1323}Prefabs/Weapons/Tripods/9M133_Kornet/Pod_9M133_Kornet.et" {
+ ID "629D11C8BD6AE717"
+ components {
+  MeshObject "{629D11CADAD0C383}" {
+   Object "{2EE84F3918953CE9}Assets/Weapons/HeavyWeapons/BMP3_Gun.xob"
+  }
+  WCS_Armament_WeaponComponent "{629D11C992611C79}" {
+   m_sName "#SPC-Weapon_9M117_Name"
+   m_DefaultProjectile "{30A7BD26D7F05CC5}Prefabs/Weapons/Magazines/9M133_Kornet/Ammo_Magazine_9M117_Bastion.et"
+   m_ExitParticle "{68617F0E56199A6E}Particles/Weapon/2a70/Muzzle_2a70.ptc"
+  }
+  SlotManagerComponent "{629D11C99AEE634A}" {
+   Slots {
+    EntitySlotInfo Backblast {
+     Offset 0 0 2.7263
+     Angles 0 0 0
+     Enabled 0
+    }
+    WCS_Armament_ProjectileSlotInfo W_5 {
+     PivotID "Missile"
+     Offset 0 0 0
+    }
+    WCS_Armament_ProjectileSlotInfo W_6 {
+     PivotID "Missile"
+     Offset 0 0 0
+    }
+    WCS_Armament_ProjectileSlotInfo W_7 {
+     PivotID "Missile"
+     Offset 0 0 0
+    }
+    WCS_Armament_ProjectileSlotInfo W_8 {
+     PivotID "Missile"
+     Offset 0 0 0
+    }
+   }
+  }
+  ActionsManagerComponent "{629D11CAB6B28AE6}" {
+   ActionContexts {
+    UserActionContext "{629D11D46C8F2AA6}" {
+     Position PointInfo "{6152B772E6638695}" {
+      Offset 0 0.2847 0.3315
+     }
+    }
+    UserActionContext "{62F96602C1F9139D}" {
+     Position PointInfo "{6152B772E6638695}" {
+      Offset 0 0 180
+     }
+    }
+   }
+   additionalActions {
+    WCS_RearmPodAtRepairStationAction "{629D11D464DEC282}" {
+     ParentContextList {
+      "rearm_pod_01"
+     }
+     UIInfo SCR_ActionUIInfo "{629D11CB1C21D168}" {
+      Name "Rearm 9M117"
+     }
+     m_sProjectileToRearm "{30A7BD26D7F05CC5}Prefabs/Weapons/Magazines/9M133_Kornet/Ammo_Magazine_9M117_Bastion.et"
+    }
+   }
+   AllowCrossHierarchy 1
+  }
+ }
+ coords 85.318 3.722 1241.415
+}
